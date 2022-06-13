@@ -1,0 +1,330 @@
+/*En primer lugar, estilos generales para el body */
+
+/*Body con color de fondo negro y evitando estilos predeterminados */
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  style: none;
+  font-family: sans-serif;
+}
+/*Estilos de las diferentes estilos de letras y encabezados */
+h1{
+  text-align: center;
+  color: white;
+}
+
+h2{
+  color: blue;
+}
+
+p{
+  text-align: left;
+  color: grey;
+}
+
+/* Caracteristicas de los links*/
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*lineas de separación en gris*/
+hr{
+  border: 1px solid grey;
+}
+
+/* Header */
+/* Header de color blanco con links alineados en el centro, con espacio entre ellos y con hover en rojo */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#encabezado{
+  background-color: white;
+  height: 60px;
+}
+
+.navbar{
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+.navbar-links a:hover {
+  color: red;
+}
+
+/* Header, ajuste del tamaño y radio del logo */
+
+.logo-header{
+  width: 75px;
+  border-radius: 100%;
+}
+
+
+/* Header, ajuste de la posición del buscador*/
+.buscador{
+  margin-right: 4px;
+  padding-right: 1rem;
+  position: relative;
+}
+.fasolid{
+  position: absolute;
+}
+
+
+/* Carousel */
+* {box-sizing:border-box}
+
+/* Carousel, container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Carousel, ocultar immagenes por defecto */
+.mySlides {
+  display: none;
+}
+
+.image-juego{
+  size: 200px;
+  height: 500px;
+}
+
+/* Carouse. Next & previous buttons características */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Carousel. Posición de "next button" a la derecha */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Carousel. Hover para botones */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Carousel. Caracterísitcas circulos*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Carousel. Caracteristicas de fade*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Carosuel. Llamada a javascript */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+/* Main (Welcome y News) */
+main{
+  flex: 2;
+}
+
+/* Main (Welcome y News) Caracteristicas compartidas de sus respectivas cajas */
+.welcome, .news{
+  border: 1px solid;
+  border-color: grey;
+  margin: 2rem;
+  text-align: center;
+}
+
+/*Main. News. Caracteristicas de los box*/
+.box{
+  border: 1px solid;
+  border-color: blue;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  display: block;
+  width: 340px;
+  height: 290px;
+  max-width: 320px;
+  display: inline-block;
+  margin: 2.5rem;
+  background: white;
+  color: grey;
+}
+
+  .box p{
+    margin: 1rem;
+  }
+
+
+.container {
+    display: block;
+  }
+
+
+
+  /* Footer */
+
+  footer {
+  /* Footer. Caracteristicas*/
+  width: 100vw;
+  background-color: red;
+  color: black;
+  text-align: justify;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 50;
+  display: flex;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  }
+
+.enlaces-footer{
+  margin-left: 250px;
+  display: column;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+.derechos{
+  padding-left: 140px;
+}
+
+.iconos-footer{
+  margin-right: 250px;
+  display: flex;
+  justify-content: space-between,
+}
+
+.twitter{
+  text-align: center;
+  margin-right: 15rem;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.github{
+  text-align: center;
+  margin-right: 15rem;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/*sidebar*/
+/* Sidebar menu */
+
+
+.sidebar {
+  height: 186.34%; /* Ajuste hasta footer*/
+  width: 0;
+  position: absolute; /* fijación durante todo el recorrido*/
+  z-index: 1; /* posicionamiento sobre el resto de elementos */
+  top: 60px; /*para no tapar el Header */
+  bottom: 0;
+  left: 0;
+  background-color: black;   /* como el resto de la página, excepto Header y Footer */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 30px;
+  transition: 0.5s; /* tiempo de transición */
+}
+
+  /* Sidebar. Ajuste de las imagenes*/
+.img-sidebar{
+  height: 220px;
+  width: 220px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+/* Sidebar hover */
+.sidebar a:hover {
+  color: red;
+}
+
+/* Sidebar. Posición close button */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Posición  y hover del botón burger*/
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 0px 0px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Sidebar. Apertura a la derecha */
+#main {
+  transition: margin-left .5s; /* Efecto de transición */
+  padding: 0px;
+  top:0;
+}
+
+/* sidebar. Ajuste para pantallas de menos de 450px */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}

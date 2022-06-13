@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game's Place</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/838d940042.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header. La primera parte es el encabezado de la web -->
+    <header id="encabezado">
+        <!-- Header. En primer lugar, el logo-->
+      <div class="">
+        <img src="images/logo.jpeg" alt="" class="logo-header">
+      </div>
+  <!-- Header. Barra de navegación con los links -->
+      <nav class="navbar">
+        <div class="navbar-links">
+            <a href="url">Home</a>
+        </div>
+        <div class="navbar-links">
+          <a href="url"> News</a>
+        </div>
+        <div class="navbar-links">
+          <a href="url">History</a>
+        </div>
+        <div class="navbar-links">
+          <a href="url">Guide</a>
+        </div>
+      </nav>
+        <!-- Header. Buscador con lupa como icono de búsqueda -->
+      <div class="input-icono">
+        <form class="buscador" action="index.html" method="post">
+          <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="text" name="" value="" placeholder=" &#xf002;">
+        </form>
+      </div>
+
+      </header>
+
+<!-- Carousel -->
+      <!-- Carosuel, imagenes-->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+          <img class="image-juego" src="images/juego1.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+
+          <img class="image-juego" src="images/juego2.jpng.jpeg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img class="image-juego" src="images/juego3.jpeg" style="width:100%">
+        </div>
+
+        <!-- Carousel, botones previous y next -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+
+      <!-- Carousel, circulos -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+
+<!-- Sidebar. Nota: en CSS está en la útima sección-->
+<!-- Sidebar. Imagenes y videos incluidos -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Multimedia</a>
+  <img class="img-sidebar"src="images/juego5.jpeg" alt="">
+  <iframe width="220" height="250" src="https://www.youtube.com/embed/jfLxWCfY47g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <img class="img-sidebar"src="images/juego4.jpeg" alt="">
+  <iframe width="220" height="250" src="https://www.youtube.com/embed/RNvYGcgoGcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <img class="img-sidebar"src="images/juego6.jpeg" alt="">
+  <iframe width="220" height="250" src="https://www.youtube.com/embed/V_tXiOcIS_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!-- Sidebar. Button de menu burguer -->
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+</div>
+
+
+
+<!-- Main (Welcome y News)->
+
+<!-Welcome section. Contenido: cabecera, separación y texto-->
+<main>
+  <div class="main-wrapper">
+    <section class="welcome">
+      <h1>Welcome Section</h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pharetra himenaeos, massa ridiculus inceptos lobortis facilisis orci venenatis sem, habitasse urna tristique arcu senectus turpis sed accumsan. Scelerisque habitant urna facilisis gravida fermentum porttitor potenti cras, molestie vehicula maecenas vivamus faucibus vitae nascetur augue donec, congue et taciti vestibulum lacinia curabitur sagittis. Integer accumsan metus sociosqu iaculis eu eget semper enim lacinia, ut sociis dictum lectus cubilia montes malesuada platea ligula quam, egestas neque non vehicula sapien est luctus dignissim.</p>
+      <p>Accumsan risus tellus felis ut vitae velit bibendum sapien lectus orci tristique, ligula vulputate quam imperdiet quisque placerat nulla tempus eleifend a. Enim libero suscipit tincidunt imperdiet nascetur urna molestie interdum porta sodales fermentum eget luctus, parturient quis nibh primis viverra at neque conubia platea senectus dis montes, duis maecenas pellentesque sapien inceptos potenti etiam semper fringilla velit phasellus fames. Dictumst purus tellus in nascetur urna nisi mollis ad eu felis, senectus quisque integer diam enim ligula per nibh ante sociis, vulputate penatibus phasellus sollicitudin ultricies lectus pharetra cras etiam.</p>
+    </section>
+
+<!-- News section-->
+<!-- News section: encabezado conteiner con 3 boxes que incluyen título y texto-->
+  <section class="news">
+    <div class="container">
+      <h1>Latest News</h1>
+      <hr>
+    <div class="box">
+      <h2>TITLE</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pharetra himenaeos, massa ridiculus inceptos lobortis facilisis orci venenatis sem, habitasse urna tristique arcu senectus turpis sed accumsan. Scelerisque habitant urna facilisis gravida fermentum porttitor potenti cras, molestie vehicula maecenas vivamus faucibus vitae nascetur augue donec, congue et taciti vestibulum lacinia curabitur sagittis.</p>
+    </div>
+    <div class="box">
+      <h2>TITLE</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pharetra himenaeos, massa ridiculus inceptos lobortis facilisis orci venenatis sem, habitasse urna tristique arcu senectus turpis sed accumsan. Scelerisque habitant urna facilisis gravida fermentum porttitor potenti cras, molestie vehicula maecenas vivamus faucibus vitae nascetur augue donec, congue et taciti vestibulum lacinia curabitur sagittis.</p>
+    </div>
+    <div class="box">
+      <h2>TITLE</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pharetra himenaeos, massa ridiculus inceptos lobortis facilisis orci venenatis sem, habitasse urna tristique arcu senectus turpis sed accumsan. Scelerisque habitant urna facilisis gravida fermentum porttitor potenti cras, molestie vehicula maecenas vivamus faucibus vitae nascetur augue donec, congue et taciti vestibulum lacinia curabitur sagittis.</p>
+    </div>
+  </div>
+  </section>
+  </div>
+
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    <!-- Footer. Enlces -->
+    <div class="enlaces-footer">
+      <div class="">
+        <a href="url">LINK 1</a>
+      </div>
+      <div class="">
+        <a href="url">LINK 2</a>
+      </div>
+      <div class="">
+          <a href="url">LINK 3</a>
+      </div>
+    </div>
+
+    <!-- Footer . Derechos-->
+    <div class="derechos">© 2022 AssamblerSchool.com - All rights reserved.
+    </div>
+
+    <!-- Footer. Iconos-->
+    <div class="iconos-footer">
+
+      <div class="twitter">
+          <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="slack">
+        <i class="fa-brands fa-slack"></i>
+      </div>
+      <div class="github">
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div class="youtube">
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+
+    </div>
+   </footer>
+
+
+<!-- Enlace al documento que contiene el código de JavaScript-->
+<script src="index.js" type="text/javascript">
+
+</script>
+</html>
